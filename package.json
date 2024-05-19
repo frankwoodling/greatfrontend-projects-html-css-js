@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "live-server",
-    "lint": "eslint . --ext .js",
+    "lint": "eslint .",
     "format": "prettier --write \"**/*.{js,css,html}\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
     "eslint": "^9.3.0",
+    "globals": "^15.2.0",
     "live-server": "^1.2.2",
     "prettier": "^3.2.5",
     "stylelint": "^16.5.0",

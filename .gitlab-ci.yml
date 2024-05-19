@@ -1,6 +1,7 @@
 image: node:latest
 
 stages:
+  - build
   - verify
   - deploy
 
@@ -9,12 +10,28 @@ cache:
   paths:
     - node_modules/
 
-verify:
-  stage: verify
+build:
+  stage: build
   script:
     - npm install
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+prettier:
+  stage: verify
+  script:
+    - npm run prettier
+  dependencies:
+    - build
+
+lint:
+  stage: verify
+  script:
     - npm run lint
-    - npm run prettier -- --check
+  dependencies:
+    - build
 
 pages:
   stage: deploy
