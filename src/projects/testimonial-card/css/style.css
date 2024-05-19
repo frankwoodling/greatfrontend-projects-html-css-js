@@ -77,18 +77,25 @@ p {
 .testimonial-card__name_section {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .testimonial-card__name {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .testimonial-card__handle {
   font-size: 14px;
   line-height: 20px;
   color: #525252;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .testimonial-card__content {
