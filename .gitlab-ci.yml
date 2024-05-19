@@ -37,7 +37,7 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp -r src/* public/
+    - cp -r projects/* public/
   artifacts:
     paths:
       - public
