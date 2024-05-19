@@ -19,10 +19,10 @@ build:
     paths:
       - node_modules/
 
-prettier:
+format:
   stage: verify
   script:
-    - npm run prettier
+    - npm run format
   dependencies:
     - build
 
