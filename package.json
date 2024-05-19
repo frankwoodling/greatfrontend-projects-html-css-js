@@ -1,0 +1,21 @@
+{
+  "name": "greatfrontend-projects-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write \"**/*.{js,css,html}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.3.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}
